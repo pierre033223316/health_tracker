@@ -18,7 +18,7 @@
 <p class="p1"><span class="Apple-converted-space">    </span>data: {</p>
 <p class="p1"><span class="Apple-converted-space">        </span>labels: ['2024-06-01', '2024-06-02', '2024-06-03'],</p>
 <p class="p1"><span class="Apple-converted-space">        </span>datasets: [{</p>
-<p class="p1"><span class="Apple-converted-space">            </span>label: '步數',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label: 'steps',</p>
 <p class="p1"><span class="Apple-converted-space">            </span>data: [8000, 7500, 9000],</p>
 <p class="p1"><span class="Apple-converted-space">            </span>borderColor: 'rgba(75, 192, 192, 1)',</p>
 <p class="p1"><span class="Apple-converted-space">            </span>borderWidth: 1</p>
@@ -38,7 +38,7 @@
 <p class="p1"><span class="Apple-converted-space">    </span>data: {</p>
 <p class="p1"><span class="Apple-converted-space">        </span>labels: ['2024-06-01', '2024-06-02', '2024-06-03'],</p>
 <p class="p1"><span class="Apple-converted-space">        </span>datasets: [{</p>
-<p class="p1"><span class="Apple-converted-space">            </span>label: '卡路里消耗',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label: 'calories consumption',</p>
 <p class="p1"><span class="Apple-converted-space">            </span>data: [300, 280, 320],</p>
 <p class="p1"><span class="Apple-converted-space">            </span>borderColor: 'rgba(153, 102, 255, 1)',</p>
 <p class="p1"><span class="Apple-converted-space">            </span>borderWidth: 1</p>
@@ -58,7 +58,7 @@
 <p class="p1"><span class="Apple-converted-space">    </span>data: {</p>
 <p class="p1"><span class="Apple-converted-space">        </span>labels: ['2024-06-01', '2024-06-02', '2024-06-03'],</p>
 <p class="p1"><span class="Apple-converted-space">        </span>datasets: [{</p>
-<p class="p1"><span class="Apple-converted-space">            </span>label: '睡眠時間',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label: 'sleeping time',</p>
 <p class="p1"><span class="Apple-converted-space">            </span>data: [7, 6.5, 8],</p>
 <p class="p1"><span class="Apple-converted-space">            </span>borderColor: 'rgba(255, 159, 64, 1)',</p>
 <p class="p1"><span class="Apple-converted-space">            </span>borderWidth: 1</p>
@@ -75,10 +75,10 @@
 <p class="p2"><br></p>
 <p class="p1">// 添加數據功能</p>
 <p class="p1">function addData() {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var date = prompt('輸入日期 (YYYY-MM-DD):');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var steps = prompt('輸入步數:');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var calories = prompt('輸入卡路里消耗:');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var sleep = prompt('輸入睡眠時間 (小時):');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var date = prompt('Enter date (YYYY-MM-DD):');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var steps = prompt('Enter steps:');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var calories = prompt('Enter calories consumption:');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var sleep = prompt('Enter sleeping time (Hours):');</p>
 <p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">    </span>stepsChart.data.labels.push(date);</p>
 <p class="p1"><span class="Apple-converted-space">    </span>stepsChart.data.datasets[0].data.push(steps);</p>
